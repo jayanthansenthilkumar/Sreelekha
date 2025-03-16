@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sreelekha Sivakumar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background: var(--bg-color);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at top right, 
+                    rgba(79, 70, 229, 0.05), 
+                    transparent 50%),
+                radial-gradient(circle at bottom left, 
+                    rgba(139, 92, 246, 0.05), 
+                    transparent 50%);
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <button class="mobile-toggle">
+        <i class="ri-menu-line"></i>
+    </button>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li class="nav-item active">
+                <a href="#home">
+                    <i class="ri-home-5-line"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#about">
+                    <i class="ri-user-3-line"></i>
+                    <span>About</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#resume">
+                    <i class="ri-code-s-slash-line"></i>
+                    <span>Resume</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#skills">
+                    <i class="ri-tools-line"></i>
+                    <span>Skills</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#contact">
+                    <i class="ri-mail-line"></i>
+                    <span>Contact</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    
+    <section id="home" class="hero">
+        <div id="particles-js"></div>
+        <div class="hero-content">
+            <div class="creative-title">
+                <div class="title-wrapper">
+                    <h1 class="hero-title">
+                        <span class="line">Hello World!</span>
+                        <span class="line accent">I'm Sreelekha</span>
+                        <span class="line">
+                            <div class="typing-wrapper">
+                                <span class="typing-static">I'm a</span>
+                                <span class="typing-text">Fullstack Developer</span>
+                            </div>
+                        </span>
+                    </h1>
+                </div>
+                <div class="floating-elements">
+                    <span class="floating-tag">&lt;dev&gt;</span>
+                    <span class="floating-tag">&lt;/dev&gt;</span>
+                    <span class="floating-dot"></span>
+                    <span class="floating-circle"></span>
+                </div>
+            </div>
+            <div class="tech-stack">
+                <span class="tech-badge">HTML5</span>
+                <span class="tech-badge">CSS3</span>
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">React.js</span>
+            </div>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    <i class="ri-code-box-line"></i>
+                    View Projects
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <i class="ri-send-plane-line"></i>
+                    Let's Talk
+                </a>
+            </div>
+        </div>
+        <div class="code-editor">
+            <div class="editor-header">
+                <div class="window-controls">
+                    <span class="window-control control-close"></span>
+                    <span class="window-control control-minimize"></span>
+                    <span class="window-control control-maximize"></span>
+                </div>
+                <div class="editor-tabs">
+                    <div class="editor-tab active">
+                        <i class="ri-python-line"></i>
+                        portfolio.py
+                    </div>
+                </div>
+            </div>
+            <div class="editor-content">
+                <div class="line-numbers">
+                    <div>1</div><div>2</div><div>3</div><div>4</div><div>5</div>
+                    <div>6</div><div>7</div><div>8</div><div>9</div><div>10</div>
+                </div>
+                <div class="code-content">
+                    <div class="code-line">
+                        <span class="keyword">class</span> <span class="function">Portfolio</span>:</div>
+                    <div class="code-line">
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">def</span> <span class="function">__init__</span>(<span class="variable">self</span>):</div>
+                    <div class="code-line">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="variable">self</span>.name = <span class="string">"Sreelekha"</span></div>
+                    <div class="code-line">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="variable">self</span>.role = <span class="string">"Frontend Developer"</span></div>
+                    <div class="code-line">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="variable">self</span>.skills = [<span class="string">"HTML"</span>, <span class="string">"CSS"</span>, <span class="string">"JavaScript"</span>]</div>
+                    <div class="code-line">&nbsp;</div>
+                    <div class="code-line">
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="comment"># Creating amazing web experiences</span></div>
+                    <div class="code-line">
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">def</span> <span class="function">create_magic</span>(<span class="variable">self</span>):</div>
+                    <div class="code-line">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span> <span class="string">"✨ Magic Created!"</span></div>
+                    <div class="code-line">&nbsp;</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <div class="section-divider">
+                    <span></span>
+                    <span class="dot"></span>
+                    <span></span>
+                </div>
+                <p class="section-subtitle">Get to know who I am</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-image-wrapper">
+                    <div class="about-image">
+                        <img src="assets/profile.jpg" alt="Sreelekha">
+                    </div>
+                    <div class="experience-badge">
+                        <span class="exp-years">3+</span>
+                        <span class="exp-text">Years of Experience</span>
+                    </div>
+                </div>
+                
+                <div class="about-details">
+                    <p class="about-intro">Hello! I'm <span class="highlight">Sreelekha</span>, a passionate Fullstack Developer based in India with expertise in creating responsive and interactive web applications. I specialize in building clean, efficient, and user-friendly web solutions with a strong foundation in both frontend and backend technologies.</p>
+                    
+                    <div class="about-buttons">
+                        <a href="#contact" class="btn btn-primary">
+                            <i class="ri-send-plane-line"></i> Contact Me
+                        </a>
+                        <a href="#" class="btn btn-outline">
+                            <i class="ri-download-line"></i> Download CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume" class="resume-section">
+        <div class="resume-container">
+            <div class="section-header">
+                <h2>Resume</h2>
+                <div class="section-divider">
+                    <span></span>
+                    <span class="dot"></span>
+                    <span></span>
+                </div>
+                <p class="section-subtitle">Here's a snapshot of my educational journey, work experiences, and professional achievements</p>
+            </div>
+
+            <div class="resume-content">
+                <div class="resume-sidebar">
+                    <div class="sidebar-header">
+                        <i class="ri-book-2-line"></i>
+                        <h4>Journey Book</h4>
+                    </div>
+                    <div class="tab-btn active" data-tab="education">
+                        <i class="ri-graduation-cap-line"></i>
+                        <span>Education</span>
+                    </div>
+                    <div class="tab-btn" data-tab="experience">
+                        <i class="ri-briefcase-4-line"></i>
+                        <span>Experience</span>
+                    </div>
+                    <div class="tab-btn" data-tab="certifications">
+                        <i class="ri-award-line"></i>
+                        <span>Certifications</span>
+                    </div>
+                    <div class="tab-btn" data-tab="achievements">
+                        <i class="ri-trophy-line"></i>
+                        <span>Achievements</span>
+                    </div>
+                </div>
+
+                <div class="resume-tabs">
+                    <div id="education" class="tab-pane active">
+                        <div class="cards-container">
+                            <div class="resume-card">
+                                <div class="card-image">
+                                    <img src="assets/college.png" alt="University">
+                                    <span class="card-badge">2018-2022</span>
+                                </div>
+                                <div class="card-header">
+                                    <i class="ri-building-4-line"></i>
+                                    <h4>University Name</h4>
+                                </div>
+                                <div class="card-content">
+                                    <p class="card-title">Bachelor of Technology</p>
+                                    <p class="card-subtitle">Computer Science</p>
+                                    <div class="card-tags">
+                                        <span class="card-tag">CGPA: 8.5</span>
+                                        <span class="card-tag">Full Time</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="resume-card">
+                                <div class="card-image">
+                                    <img src="assets/university.jpg" alt="University">
+                                    <span class="card-badge">2018-2022</span>
+                                </div>
+                                <div class="card-header">
+                                    <i class="ri-building-4-line"></i>
+                                    <h4>Bachelor's Degree</h4>
+                                </div>
+                                <div class="card-content">
+                                    <p class="card-title">Computer Science & Engineering</p>
+                                    <p class="card-subtitle">University Name</p>
+                                    <div class="card-tags">
+                                        <span class="card-tag">CGPA: 8.5</span>
+                                        <span class="card-tag">Full Time</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="resume-card">
+                                <div class="card-image">
+                                    <img src="assets/highschool.jpg" alt="High School">
+                                    <span class="card-badge">2016-2018</span>
+                                </div>
+                                <div class="card-header">
+                                    <i class="ri-school-line"></i>
+                                    <h4>High School</h4>
+                                </div>
+                                <div class="card-content">
+                                    <p class="card-title">Science & Mathematics</p>
+                                    <p class="card-subtitle">School Name</p>
+                                    <div class="card-tags">
+                                        <span class="card-tag">Score: 95%</span>
+                                        <span class="card-tag">PCM</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="experience" class="tab-pane">
+                        <div class="cards-container">
+                            <div class="resume-card">
+                                <div class="card-image">
+                                    <img src="assets/company1.jpg" alt="Company">
+                                    <span class="card-badge">2022-Present</span>
+                                </div>
+                                <div class="card-header">
+                                    <i class="ri-briefcase-4-line"></i>
+                                    <h4>Software Developer</h4>
+                                </div>
+                                <div class="card-content">
+                                    <p class="card-title">Full Stack Development</p>
+                                    <p class="card-subtitle">Company Name</p>
+                                    <div class="card-tags">
+                                        <span class="card-tag">React</span>
+                                        <span class="card-tag">Node.js</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="resume-card">
+                                <div class="card-image">
+                                    <img src="assets/company2.jpg" alt="Internship">
+                                    <span class="card-badge">2021-2022</span>
+                                </div>
+                                <div class="card-header">
+                                    <i class="ri-code-box-line"></i>
+                                    <h4>Web Developer Intern</h4>
+                                </div>
+                                <div class="card-content">
+                                    <p class="card-title">Frontend Development</p>
+                                    <p class="card-subtitle">Company Name</p>
+                                    <div class="card-tags">
+                                        <span class="card-tag">HTML/CSS</span>
+                                        <span class="card-tag">JavaScript</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="certifications" class="tab-pane">
+                        <div class="cards-container">
+                            <div class="resume-card">
+                                <div class="card-image">
+                                    <img src="assets/cert1.jpg" alt="Certification">
+                                    <span class="card-badge">2023</span>
+                                </div>
+                                <div class="card-header">
+                                    <i class="ri-award-line"></i>
+                                    <h4>AWS Certification</h4>
+                                </div>
+                                <div class="card-content">
+                                    <p class="card-title">AWS Solutions Architect</p>
+                                    <p class="card-subtitle">Amazon Web Services</p>
+                                    <div class="card-tags">
+                                        <span class="card-tag">Cloud</span>
+                                        <span class="card-tag">Architecture</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="resume-card">
+                                <div class="card-image">
+                                    <img src="assets/cert2.jpg" alt="Certification">
+                                    <span class="card-badge">2022</span>
+                                </div>
+                                <div class="card-header">
+                                    <i class="ri-code-line"></i>
+                                    <h4>React Development</h4>
+                                </div>
+                                <div class="card-content">
+                                    <p class="card-title">Advanced React & Redux</p>
+                                    <p class="card-subtitle">Meta</p>
+                                    <div class="card-tags">
+                                        <span class="card-tag">Frontend</span>
+                                        <span class="card-tag">Web Dev</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="achievements" class="tab-pane">
+                        <div class="cards-container">
+                            <div class="resume-card">
+                                <div class="card-image">
+                                    <img src="assets/award1.jpg" alt="Achievement">
+                                    <span class="card-badge">2023</span>
+                                </div>
+                                <div class="card-header">
+                                    <i class="ri-trophy-line"></i>
+                                    <h4>Best Project Award</h4>
+                                </div>
+                                <div class="card-content">
+                                    <p class="card-title">Innovation Summit 2023</p>
+                                    <p class="card-subtitle">Tech Conference</p>
+                                    <div class="card-tags">
+                                        <span class="card-tag">First Place</span>
+                                        <span class="card-tag">Innovation</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="resume-card">
+                                <div class="card-image">
+                                    <img src="assets/award2.jpg" alt="Achievement">
+                                    <span class="card-badge">2022</span>
+                                </div>
+                                <div class="card-header">
+                                    <i class="ri-medal-line"></i>
+                                    <h4>Hackathon Winner</h4>
+                                </div>
+                                <div class="card-content">
+                                    <p class="card-title">National Hackathon</p>
+                                    <p class="card-subtitle">Tech Hub</p>
+                                    <div class="card-tags">
+                                        <span class="card-tag">Team Lead</span>
+                                        <span class="card-tag">Winner</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        class TypeWriter {
+            constructor(element, words) {
+                this.element = element;
+                this.words = words;
+                this.txt = '';
+                this.wordIndex = 0;
+                this.isDeleting = false;
+                this.type();
+            }
+
+            type() {
+                const currentWord = this.words[this.wordIndex];
+                const speed = this.isDeleting ? 50 : 100;
+
+                if (this.isDeleting) {
+                    this.txt = currentWord.substring(0, this.txt.length - 1);
+                } else {
+                    this.txt = currentWord.substring(0, this.txt.length + 1);
+                }
+
+                this.element.textContent = this.txt;
+
+                if (!this.isDeleting && this.txt === currentWord) {
+                    setTimeout(() => {
+                        this.isDeleting = true;
+                        this.type();
+                    }, 2000);
+                } else if (this.isDeleting && this.txt === '') {
+                    this.isDeleting = false;
+                    this.wordIndex = (this.wordIndex + 1) % this.words.length;
+                    setTimeout(() => this.type(), 500);
+                } else {
+                    setTimeout(() => this.type(), speed);
+                }
+            }
+        }
+
+        // Initialize when DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            const element = document.querySelector('.typing-text');
+            const words = ['Fullstack Developer', 'Problem Solver'];
+            new TypeWriter(element, words);
+        });
+    </script>
+</body>
+</html>
